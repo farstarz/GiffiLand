@@ -4,19 +4,47 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" type="text/css" href="./assets/style.css">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <link rel="stylesheet" type="text/scss" href="./assets/style.scss">
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script src="./assets/giffiLand.js"></script>
   <title>Document</title>
 </head>
 <body>
-  <label for="searchWho">Type Something</label>
-  <input id="searchWho" type = "text" value="Who do you want to make fun of?">
-  <input id="submit" type="submit" >
-  <div class="giffs"></div>
-  
+  <div class="container red lighten-3">
+    <div class="searchBar row red lighten-3 materialize-red-text text-lighten-5 ">
+      <label for="searchWho" class="materialize-red-text text-lighten-5 ">Type Something</label>
+      <input id="searchWho" type = "text" value="Who do you want to make fun of?">
+      <label for="limit" class="materialize-red-text text-lighten-5 ">Type Something</label>
+      <input id="limit" type = "number" value=5>
+      <label for="rating" class="materialize-red-text text-lighten-5 ">Type Something</label>
+      <input id="rating" type = "text" value="g">
+      <input id="submit" type="submit" >
+    </div>
+    <div class="row purple darken-3">
+      <div class="col s3">
+        <table>
+          <thead>
+            <tr>
+              <th>History</th>
+            </tr>
+          </thead>
+          <tbody id="history">
+            
+          </tbody>
+        </table>
+      </div>
+      <div class="col s9 purple lighten-2">
+        <div class="giffs"></div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
